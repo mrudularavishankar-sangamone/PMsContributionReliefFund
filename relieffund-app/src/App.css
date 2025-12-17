@@ -1,18 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -25,27 +10,33 @@
   margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-h1, h2, p {
+h1 {
+  text-transform: uppercase;
   text-align: center;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
+  font-size: 3rem;
+  margin: 20px 5px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 5px;
+  letter-spacing: 1px;
 }
 
 p {
-  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  margin: 20px 5px;
+  letter-spacing: 1px;
 }
 
 .donationFormCSS {
@@ -56,18 +47,20 @@ p {
   margin: auto;
 }
 
-label {
- display: flex; 
- gap: 10px;
- justify-content: space-between;
- width: 40%
-}
-
 form{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  margin-bottom: 5px;
+}
+
+label {
+ display: flex; 
+ gap: 10px;
+ justify-content: space-between;
+ width: 40%;
+ letter-spacing: 0.5px;
 }
 
 input {
@@ -77,9 +70,9 @@ input {
 .submitButton {
   margin: 10px;
   padding: 10px;
-  font-weight: bold;
   background-color: green;
   border: 1px solid black;
   width: 10%;
   color: white;
+ letter-spacing: 0.5px;
 }
